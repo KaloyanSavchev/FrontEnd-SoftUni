@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="time" style="border:3px solid blue; text-align:center; font-size:2em;" disabled="true" />
+    <script>
+        window.onload = function(countdown) {
+            countdown = 100;
+            let box = document.getElementById("time")
+
+            setInterval(() =>  {
+                setInterval(function() {})
+                let minute = countdown % 60;
+                let second = countdown - minute * 60; 
+                let time = `${minute} : ${second}`;
+                box.textContent = time;
+            }, 1000)
+        }
+    </script>
+</body>
+
+</html>
